@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=keyboard_arrow_down" />
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            padding: 20px;
+            height: 10px;
+            background-color: rgba(255, 255, 255, 0.488);
+        }
+
+        .logo-side img {
+            border: 2px solid black;
+            /* align-items: center; */
+        }
+
+        .name {
+            display: inline-block;
+        }
+
+        .logo-side span,
+        p {
+            display: flex;
+        }
+
+        .ue {
+            font-weight: bolder;
+            font-size: larger;
+        }
+
+        p {
+            font-size: small;
+        }
+
+        ul {
+            list-style: none;
+            display: flex;
+            justify-content: space-evenly;
+            align-content: center;
+            gap: 40px;
+        }
+
+        .navbar li a {
+            text-decoration: none;
+            color: black;
+            font-size: 14px;
+            font-weight: bolder;
+            display: flex;
+
+        }
+
+
+        nav {
+            display: flex;
+            justify-content: space-evenly;
+            width: 100vw;
+        }
+
+        /* v44 style start */
+        main {
+
+            background-color: rgba(255, 255, 255, 0.488);
+            display: grid;
+        }
+
+        section {
+            margin: 20px 350px;
+
+        }
+
+        .head-one {
+            grid-template-columns: 12fr .2fr;
+        }
+
+        .heading h1 {
+            text-align: center;
+            padding: 20px 0;
+            font-weight: 100;
+
+        }
+
+        .stars {
+            background-color: orange;
+            border: orange;
+            border-radius: 5px;
+            color: yellow;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            padding: 0 10px;
+            width: 35px;
+            height: 20px;
+            align-self: center;
+            margin:20px;
+
+        }
+
+        .heading .bold {
+            font-weight: 600;
+            padding: 20px 0;
+
+        }
+
+        .heading p {
+            font-size: large;
+            text-align: center;
+        }
+
+        .btn-main {
+            text-align: center;
+            padding: 20px 0;
+
+        }
+
+        .btn-main button {
+            background-color: aqua;
+            border: none;
+            border-radius: 3px;
+            padding: 10px;
+        }
+
+        .ue-i {
+            border: 2px solid black;
+            height: 20px;
+            width: 25px;
+            display: inline-block;
+            border-radius: 5px;
+            background-color: #fbff00;
+            font-weight: bolder;
+            text-align: center;
+        }
+
+        .d-label p {
+            display: inline;
+        }
+
+        .d-label span {
+            font-weight: bold;
+        }
+
+        .boxes {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            justify-content: center;
+            gap: 40px;
+            align-items: center;
+            text-align: center;
+        }
+
+        .box {
+            display: grid;
+            grid-template-columns: 40px 40px 40px;
+            grid-template-rows: 50px 50px;
+            gap: 20px 20px;
+            background-color: rgba(232, 232, 232, 0.419);
+            padding: 10px;
+            border-radius: 7px;
+        }
+
+        .box h2 {
+            grid-column: 1/5;
+            grid-row: 1/2;
+        }
+
+        .box .btn1 {
+            grid-column: 1 / 3;
+            height: 30px;
+            background-color: rgb(0, 242, 255);
+            border: 0;
+            border-radius: 5px;
+        }
+
+        .box .btn2 {
+            grid-column: 3/5;
+            height: 30px;
+            background-color: greenyellow;
+            border: 0;
+            border-radius: 5px
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo-side">
+                <img width="50px" height="50px" src="/" alt="logo">
+                <div class="name">
+                    <span class="ue">UltraEdit</span>
+                    <p>by Embarcadero</p>
+                </div>
+            </div>
+            <div class="navbar">
+                <ul>
+                    <li>
+                        <a href="/"><span>Product
+                            </span>
+                            <span class="material-symbols-outlined">
+                                keyboard_arrow_down
+                            </span></a>
+                    </li>
+                    <li>
+                        <a href="/"><span>Pricing
+                            </span>
+                            <span class="material-symbols-outlined">
+                                keyboard_arrow_down
+                            </span></a>
+                    </li>
+                    <li>
+                        <a href="/"><span>Resource
+                            </span>
+                            <span class="material-symbols-outlined">
+                                keyboard_arrow_down
+                            </span></a>
+                    </li>
+                    <li>
+                        <a href="/"><span>About us
+                            </span>
+                            <span class="material-symbols-outlined">
+                                keyboard_arrow_down
+                            </span></a>
+                    </li>
+                    <li>
+                        <a href="/">#</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="heading">
+            <div class="head-one">
+                <h1>Download <span class="bold">UltraEdit</span> for Windows<span class="stars">G *****</span></h1>
+                
+            </div>
+            <p>Download and try UltraEdit before you buy it! This download includes the full Windows version of the text
+                editor</p>
+            <div class="btn-main"><button>DOWNLOAD MAC OR LINUX VERSION</button></div>
+        </section>
+        <section class="d-label">
+
+            <head>
+                <div class="ue-i">UE</div>
+                <span>Download UltraEdit</span>
+                <p>Click here to download file</p>
+            </head>
+        </section>
+        <section class="boxes">
+            <div class="box box1">
+                <h2>English</h2>
+                <button class="btn1">Download 32bit</button>
+                <button class="btn2">Download 64bit</button>
+            </div>
+            <div class="box box2">
+                <h2>Deutech</h2>
+                <button class="btn1">Download 32bit</button>
+                <button class="btn2">Download 64bit</button>
+            </div>
+            <div class="box box3">
+                <h2>Italiane</h2>
+                <button class="btn1">Download 32bit</button>
+                <button class="btn2">Download 64bit</button>
+            </div>
+            <div class="box box4">
+                <h2>Europeion</h2>
+                <button class="btn1">Download 32bit</button>
+                <button class="btn2">Download 64bit</button>
+            </div>
+            <div class="box box5">
+                <h2>french</h2>
+                <button class="btn1">Download 32bit</button>
+                <button class="btn2">Download 64bit</button>
+            </div>
+            <div class="box box6">
+                <h2>portugies</h2>
+                <button class="btn1">Download 32bit</button>
+                <button class="btn2">Download 64bit</button>
+            </div>
+            <div class="box box7">
+                <h2>japan</h2>
+                <button class="btn1">Download 32bit</button>
+                <button class="btn2">Download 64bit</button>
+            </div>
+            <div class="box box8">
+                <h2>china</h2>
+                <button class="btn1">Download 32bit</button>
+                <button class="btn2">Download 64bit</button>
+            </div>
+            <div class="box box9">
+                <h2>Africa</h2>
+                <button class="btn1">Download 32bit</button>
+                <button class="btn2">Download 64bit</button>
+            </div>
+            <div class="box box10">
+                <h2>Italy</h2>
+                <button class="btn1">Download 32bit</button>
+                <button class="btn2">Download 64bit</button>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

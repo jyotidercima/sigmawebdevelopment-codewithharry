@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi color nav bar</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        :root {
+            --primary-color: rgb(14, 14, 255);
+            --secondary-color: rgb(72, 126, 227);
+            --text-color: white;
+
+        }
+
+        body {
+            background-color: var(--secondary-color);
+        }
+
+        nav ul li {
+            padding: 30px;
+            display: inline;
+
+        }
+
+        nav {
+            background-color: var(--primary-color);
+            padding: 10px;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        nav a {
+            color: var(--text-color);
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Create a Multi-color nav bar which can change color using css variables-->
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/">About</a></li>
+            <li><a href="/">projects</a></li>
+            <li><a href="/">contact</a></li>
+        </ul>
+    </nav>
+
+</body>
+
+</html>

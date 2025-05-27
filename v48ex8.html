@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .ball{
+            height: 121px;
+            width: 121px;
+            background-color: red;
+            position:absolute;
+            border-radius: 50%;
+            bottom:0;
+            left:0;
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            animation-name: bounce;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-timing-function:linear;
+            animation-direction: normal;
+            animation-play-state: running;
+
+            /* try1 */
+            
+        }
+        .container{
+            position: relative;
+            height: 80vh;
+            width:80vw;
+            background-color: blue;
+        }
+        @keyframes bounce{
+            0%{
+                transform: translatex(0) translatey(0);
+            }
+            5%{
+                transform: translatex(50%) translatey(-40%);
+            }
+            10%{
+                transform: translatex(100%) translatey(-80%);
+            }
+            15%{
+                transform: translatex(150%) translatey(-120%);
+            }
+            20%{
+                transform: translatex(200%) translatey(-160%);
+            }
+            25%{
+                transform: translatex(250%) translatey(-200%);
+            }
+            30%{
+                transform: translatex(300%) translatey(-160%);
+            }
+            35%{
+                transform: translatex(350%) translatey(-120%);
+            }
+            40%{
+                transform: translatex(400%) translatey(-80%);
+            }
+            45%{
+                transform: translatex(450%) translatey(-40%);
+            }
+            50%{
+                transform: translatex(500%) translatey(0);
+            }
+            55%{
+                transform: translatex(550%) translatey(-40%);
+            }
+            60%{
+                transform: translatex(600%) translatey(-80%);
+            }
+            65%{
+                transform: translatex(650%) translatey(-120%);
+            }
+            70%{
+                transform: translatex(700%) translatey(-160%);
+            }
+            75%{
+                transform: translatex(750%) translatey(-200%);
+            }
+            80%{
+                transform: translatex(800%) translatey(-160%);
+            }
+            85%{
+                transform: translatex(850%) translatey(-120%);
+            }
+            90%{
+                transform: translatex(900%) translatey(-80%);
+            }
+            95%{
+                transform: translatex(950%) translatey(-40%);
+            }
+            100%{
+                transform: translatex(1000%) translatey(0%);
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <!-- transition or animation anything 
+    x alag animation y alag animation -->
+    <div class="container">
+        <div class="ball">
+        </div>
+    </div>
+</body>
+</html>

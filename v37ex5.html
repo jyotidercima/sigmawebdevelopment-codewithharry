@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: black;
+            overflow-x: hidden;
+        }
+
+        header {
+            position: sticky;
+            top: 0;
+        }
+
+        nav {
+            background-color: rgb(249, 116, 218);
+            padding: 15px;
+
+            height: 3vh;
+        }
+
+        ul li {
+            display: inline;
+            margin: 20px;
+        }
+
+        .boxes {
+            background-color: rgb(115, 255, 115);
+            /* display: flex;
+            gap: 20px; */
+            padding: 20px;
+            height: 80vh;
+            margin: 10px;
+        }
+
+        .box {
+            border: 2px solid rgb(130, 130, 133);
+            width: 49%;
+            height: 100%;
+            display: inline-block;
+        }
+
+        .box1 {
+            background-color: pink;
+        }
+
+        .box2 {
+            background-color: rgb(0, 8, 255);
+        }
+
+        .textcont {
+            padding: 20px;
+            background-color: black;
+            height: 60vh;
+        }
+
+        .welcome {
+            margin: 50px;
+            border: 2px solid white;
+            color: white;
+            font-size: 70px;
+            border-radius: 20px;
+            text-align: center;
+        }
+
+        .circle {
+            background-color: orange;
+            width: fit-content;
+            border-radius: 50%;
+            padding: 20px;
+            position: fixed;
+            bottom: 10px;
+            right: 5px;
+            font-size: larger;
+            font-weight: bold;
+        }
+
+        footer {
+            bottom: 0;
+            background-color: #fff;
+            padding: 20px;
+            width: 100%;
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Projects</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="boxes">
+            <div class="box box1"></div>
+            <div class="box box2"></div>
+        </section>
+        <section class="textcont">
+            <div class="welcome">Welcome to this Sigma Web Development Express</div>
+        </section>
+        <section class="icon">
+            <div class="circle">Hi!</div>
+        </section>
+    </main>
+    <footer>
+        <p>This is 37th video Answer of Sigma Web Development Course. As on 09-05-2025 </p>
+    </footer>
+</body>
+
+</html>
